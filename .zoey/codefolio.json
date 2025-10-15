@@ -1,0 +1,99 @@
+{
+  "version": "1.0.0",
+  "title": "prod testing bc — Technical Assessment Portfolio",
+  "description": "Document your approach, decision-making, and implementation quality for collaborative code review.",
+  "created_at": "2025-10-15T07:53:26.847Z",
+  "highlights": [
+    "Document your technical decisions",
+    "Showcase your problem-solving approach",
+    "Demonstrate communication skills"
+  ],
+  "sections": [
+    {
+      "id": "welcome",
+      "type": "text",
+      "title": "Welcome to Your Technical Assessment",
+      "content": {
+        "text": "Hi! 👋\n\nThis isn't just a coding test — it's a **collaborative code review** where we want to understand how you think, solve problems, and work with a team.\n\n**What makes this different:**\n- We'll review your code together, discussing your approach and decisions\n- We care about *how* you got to the solution, not just the final result  \n- This is a conversation, not a pass/fail exam\n- We value clarity, maintainability, and pragmatic problem-solving\n\n**Use this Codefolio to:**\n- Document your thought process and key decisions\n- Highlight areas you're proud of or want feedback on\n- Explain trade-offs you made and why\n- Show your communication skills (critical for remote teams!)"
+      }
+    },
+    {
+      "id": "evaluation-criteria",
+      "type": "labels",
+      "title": "What We're Looking For",
+      "content": {
+        "category": "Technical Competencies",
+        "labels": [
+          "Clean, Readable Code",
+          "Practical Problem Solving",
+          "Error Handling & Edge Cases",
+          "Security Awareness",
+          "Testing Mindset",
+          "Clear Communication",
+          "Team Collaboration Readiness"
+        ],
+        "proficiency_levels": {
+          "Clean, Readable Code": "advanced",
+          "Practical Problem Solving": "advanced",
+          "Team Collaboration Readiness": "advanced"
+        }
+      }
+    },
+    {
+      "id": "context",
+      "type": "text",
+      "title": "Challenge Context & Requirements",
+      "content": {
+        "text": "**The Challenge:**\nprod testing bc\n\n**What You're Building:**\n[The AI agent will fill this in with specific requirements from knowledge.yaml]\n\n**Why This Matters:**\nThis challenge reflects real work you'd do on our team. We want to see how you approach problems similar to what you'd face day-to-day.\n\n**Time Expectation:**\nThis should take 2-4 hours for an experienced developer. Quality over speed — we'd rather see thoughtful code than rushed features."
+      }
+    },
+    {
+      "id": "guidelines",
+      "type": "text",
+      "title": "Important: Please Read",
+      "content": {
+        "text": "**DO:**\n✅ Write code you'd be proud to show your team  \n✅ Include error handling and validation  \n✅ Add comments for complex logic  \n✅ Test your implementation  \n✅ Document your setup and assumptions  \n✅ Ask questions if requirements are unclear (in this Codefolio)  \n\n**DON'T:**\n❌ Just copy-paste from Stack Overflow without understanding  \n❌ Skip error handling to \"save time\"  \n❌ Leave TODO comments without implementation  \n❌ Over-engineer simple solutions  \n❌ Treat this like a timed exam — we want to *talk* about your code!  \n\n**Most Important:**\nWe're hiring for **collaboration**, not just coding. Show us you can write code that others can understand, maintain, and build upon."
+      }
+    },
+    {
+      "id": "ai-policy",
+      "type": "text",
+      "title": "AI Tool Usage Policy (AI-Safe™)",
+      "content": {
+        "text": "**Using AI Tools? That's Totally Fine! 🤖**\n\nWe know developers use AI assistants like GitHub Copilot, ChatGPT, and others. That's modern software development!\n\n**What We Track (AI-Safe™):**\n- Our system tracks repository activity to ensure code was developed progressively\n- We look for natural development patterns (commits, iterations, debugging)\n- Red flags: Code that appears all at once with no iteration or debugging\n\n**How to Use AI Responsibly:**\n✅ Use AI for suggestions, boilerplate, and learning  \n✅ Understand and modify the code it generates  \n✅ Work iteratively (commit frequently, refine as you go)  \n✅ Be ready to explain any code in your submission  \n\n❌ Don't just dump a full AI solution without understanding it  \n❌ Don't skip the development process (we'll see it in git history)  \n\n**Bottom Line:**\nAI is a tool. We want to see *your* problem-solving, *your* decisions, and *your* ability to collaborate. Use AI to help you work better, not to skip the work entirely."
+      }
+    },
+    {
+      "id": "approach",
+      "type": "text",
+      "title": "Your Approach & Methodology",
+      "content": {
+        "text": "**[FILL THIS IN]**\n\nDescribe your approach to solving this challenge:\n\n- **Problem Analysis:** How did you break down the requirements?\n- **Architecture Decisions:** What structure did you choose and why?\n- **Technology Choices:** If you had flexibility, what did you pick and why?\n- **Trade-offs:** What compromises did you make and why?\n- **Challenges Faced:** What was harder than expected?\n\n*This is where you show your thinking, not just your coding.*"
+      }
+    },
+    {
+      "id": "implementation",
+      "type": "text",
+      "title": "Key Implementation Highlights",
+      "content": {
+        "text": "**[FILL THIS IN - Add code snippets and explanations]**\n\nHighlight 2-3 pieces of code you're proud of or want to discuss:\n\n**Example:**\n```javascript\n// User validation with detailed error messages\nfunction validateUser(userData) {\n  const errors = [];\n  \n  if (!isValidEmail(userData.email)) {\n    errors.push({ field: 'email', message: 'Invalid email format' });\n  }\n  \n  // I chose to return all errors at once for better UX\n  return errors.length > 0 ? { valid: false, errors } : { valid: true };\n}\n```\n\n**Why this approach:**\n- Returns all validation errors at once (better UX than one-at-a-time)\n- Separates validation logic for easier testing\n- Clear error messages help users fix issues quickly"
+      }
+    },
+    {
+      "id": "testing",
+      "type": "text",
+      "title": "Testing & Quality Assurance",
+      "content": {
+        "text": "**[FILL THIS IN]**\n\nDescribe your testing approach:\n\n- **What did you test?** (unit tests, integration tests, manual testing)\n- **Coverage:** What % of critical paths are tested?\n- **Edge Cases:** What edge cases did you handle?\n- **Known Issues:** Any bugs or limitations we should know about?\n\n*Honesty about limitations is better than hiding them!*"
+      }
+    },
+    {
+      "id": "reflection",
+      "type": "text",
+      "title": "Reflection & Next Steps",
+      "content": {
+        "text": "**[FILL THIS IN]**\n\nLooking back on this challenge:\n\n- **What went well?** What are you most proud of?\n- **What would you improve?** Given more time, what would you refactor?\n- **What did you learn?** Any new techniques or insights?\n- **Questions for us?** Anything unclear about the requirements?\n\n**If I had more time, I would:**\n- [Add feature X for better user experience]\n- [Refactor Y for better maintainability]\n- [Add more comprehensive tests for Z]\n\n---\n\n*Ready to discuss your code? We're excited to review it with you!*"
+      }
+    }
+  ]
+}
