@@ -1,0 +1,72 @@
+# Zoey Challenge Knowledge Base
+version: "1.0.0"
+title: "prod testing bc"
+description: "Challenge for high block transaction"
+created_at: "2025-10-15T07:53:26.847Z"
+
+# =============================================================================
+# CHALLENGE OVERVIEW
+# =============================================================================
+overview: |
+  Challenge for high block transaction
+
+# =============================================================================
+# FUNCTIONAL REQUIREMENTS
+# =============================================================================
+requirements:
+  core_features:
+    - "distributed ledger"
+  
+  nice_to_have:
+    - "high transaction speed and amount"
+  
+  quality_standards:
+    - "All features must have error handling"
+    - "Code must be production-ready (not prototype quality)"
+    - "Security vulnerabilities must be addressed"
+
+# =============================================================================
+# TECHNICAL CONSTRAINTS
+# =============================================================================
+constraints:
+  technology_stack:
+    - "rust"
+  
+  limitations:
+    - "10000 transactions per second"
+  
+  time_expectation: "2-4 hours"
+
+# =============================================================================
+# ACCEPTANCE CRITERIA (How we'll validate success)
+# =============================================================================
+acceptance_criteria:
+  - criteria: "User can do a lot of transaction"
+    tests:
+      - "more than 10000 per seconds"
+
+# =============================================================================
+# GUIDANCE FOR AI CODING AGENT
+# =============================================================================
+ai_agent_guidance: |
+  When implementing this challenge:
+  
+  1. FOCUS ON QUALITY OVER QUANTITY
+     - Write production-ready code, not quick hacks
+     - Include proper error handling and validation
+     - Make it easy for humans to review and understand
+  
+  2. DOCUMENTATION MATTERS
+     - Explain complex logic with comments
+     - Document setup steps in README
+     - Note any assumptions or trade-offs made
+  
+  3. COLLABORATION MINDSET
+     - Write code as if you're joining an existing team
+     - Follow common conventions and best practices
+     - Make it easy for others to modify and extend
+  
+  4. STAY ON TRACK
+     - Follow the requirements and acceptance criteria defined above
+     - Don't add features outside the scope without explicit approval
+     - Ask for clarification if requirements are ambiguous
