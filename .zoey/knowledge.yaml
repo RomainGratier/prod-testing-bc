@@ -1,71 +1,83 @@
-# Zoey Challenge Knowledge Base
-version: "1.0.0"
-title: "prod testing bc"
-description: "Challenge for high block transaction"
-created_at: "2025-10-15T07:53:26.847Z"
-
-# =============================================================================
-# CHALLENGE OVERVIEW
-# =============================================================================
-overview: |
-  Challenge for high block transaction
-
-# =============================================================================
-# FUNCTIONAL REQUIREMENTS
-# =============================================================================
+version: 1.0.0
+title: Distributed Ledger - High Performance Blockchain
+description: A production-ready distributed ledger system in Rust, designed for
+  10,000+ transactions per second with robust error handling and security
+  features.
+created_at: 2025-10-15T07:53:26.847Z
+overview: The challenge is to build a production-ready distributed ledger system
+  in Rust that can handle 10,000+ transactions per second. It requires
+  implementing a high-throughput transaction pool, an immutable blockchain with
+  proof-of-work consensus, real-time account balance tracking, and robust
+  security measures including cryptographic signatures and double-spending
+  prevention. The system must utilize concurrent processing for efficient
+  transaction validation and block creation, and include performance monitoring.
 requirements:
   core_features:
-    - "distributed ledger"
-  
-  nice_to_have:
-    - "high transaction speed and amount"
-  
+    - High-performance distributed ledger capable of 10,000+ TPS
+    - Immutable blockchain with proof-of-work consensus
+    - Cryptographic transaction validation (signatures and balance verification)
+    - Concurrent processing for transactions and block creation using async/await
+    - Real-time account balance tracking and management
+    - High-throughput transaction pool for queuing
+    - Comprehensive error handling and validation for production readiness
+  nice_to_have: []
   quality_standards:
-    - "All features must have error handling"
-    - "Code must be production-ready (not prototype quality)"
-    - "Security vulnerabilities must be addressed"
-
-# =============================================================================
-# TECHNICAL CONSTRAINTS
-# =============================================================================
+    - Achieve sustained throughput of 10,000+ transactions per second
+    - Average transaction processing latency less than 1ms
+    - Support 1000+ concurrent transactions
+    - Efficient memory usage with bounded queues
+    - Code must be production-ready and secure against double-spending and
+      tampering
+    - All features must have robust error handling and graceful recovery
 constraints:
   technology_stack:
-    - "rust"
-  
+    - Rust 1.70+
+    - Cargo
+    - Asynchronous Rust (e.g., Tokio for concurrent processing)
   limitations:
-    - "10000 transactions per second"
-  
-  time_expectation: "2-4 hours"
-
-# =============================================================================
-# ACCEPTANCE CRITERIA (How we'll validate success)
-# =============================================================================
+    - "Target throughput: 10,000+ transactions per second"
+    - No reliance on external database services for core ledger state (in-memory
+      or custom persistence)
+    - Peak TPS of 15,000+ achievable
+  time_expectation: 2-4 hours
 acceptance_criteria:
-  - criteria: "User can do a lot of transaction"
+  - criteria: System demonstrates sustained throughput of 10,000+ transactions per
+      second.
     tests:
-      - "more than 10000 per seconds"
-
-# =============================================================================
-# GUIDANCE FOR AI CODING AGENT
-# =============================================================================
+      - Running `cargo bench transaction_throughput` shows 10,000+ TPS.
+      - The `basic_usage` example processes 50,000 transactions in approximately
+        5 seconds, achieving 10,000+ TPS.
+  - criteria: Transactions are cryptographically validated and balances are
+      correctly managed.
+    tests:
+      - Transactions are rejected if the sender has insufficient balance.
+      - Transaction signatures prevent tampering and ensure integrity.
+      - Account balances are accurately updated after successful transactions.
+  - criteria: Blockchain maintains integrity, immutability, and utilizes concurrent
+      processing.
+    tests:
+      - Blocks are added to the chain only after successful validation.
+      - Attempting to tamper with a historical block is detected and prevented.
+      - Concurrent transaction processing correctly handles multiple
+        simultaneous transactions without data races or inconsistencies.
 ai_agent_guidance: |
   When implementing this challenge:
-  
+
   1. FOCUS ON QUALITY OVER QUANTITY
      - Write production-ready code, not quick hacks
      - Include proper error handling and validation
      - Make it easy for humans to review and understand
-  
+
   2. DOCUMENTATION MATTERS
      - Explain complex logic with comments
      - Document setup steps in README
      - Note any assumptions or trade-offs made
-  
+
   3. COLLABORATION MINDSET
      - Write code as if you're joining an existing team
      - Follow common conventions and best practices
      - Make it easy for others to modify and extend
-  
+
   4. STAY ON TRACK
      - Follow the requirements and acceptance criteria defined above
      - Don't add features outside the scope without explicit approval

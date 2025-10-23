@@ -1,12 +1,14 @@
 {
   "version": "1.0.0",
-  "title": "prod testing bc — Technical Assessment Portfolio",
-  "description": "Document your approach, decision-making, and implementation quality for collaborative code review.",
+  "title": "Distributed Ledger - High Performance Blockchain",
+  "description": "A production-ready distributed ledger system in Rust, designed to handle 10,000+ transactions per second with robust error handling and security features.",
   "created_at": "2025-10-15T07:53:26.847Z",
   "highlights": [
-    "Document your technical decisions",
-    "Showcase your problem-solving approach",
-    "Demonstrate communication skills"
+    "Designed for 10,000+ Transactions Per Second (TPS) throughput",
+    "Implemented a distributed ledger with immutable blockchain and proof-of-work consensus",
+    "Utilized Rust for high-performance concurrent transaction processing",
+    "Ensured security with cryptographic signatures and balance validation",
+    "Integrated real-time performance monitoring and comprehensive error handling"
   ],
   "sections": [
     {
@@ -42,9 +44,10 @@
     {
       "id": "context",
       "type": "text",
-      "title": "Challenge Context & Requirements",
+      "title": "Challenge: High-Performance Distributed Ledger",
       "content": {
-        "text": "**The Challenge:**\nprod testing bc\n\n**What You're Building:**\n[The AI agent will fill this in with specific requirements from knowledge.yaml]\n\n**Why This Matters:**\nThis challenge reflects real work you'd do on our team. We want to see how you approach problems similar to what you'd face day-to-day.\n\n**Time Expectation:**\nThis should take 2-4 hours for an experienced developer. Quality over speed — we'd rather see thoughtful code than rushed features."
+        "text": "**The Challenge:** Build a high-performance distributed ledger system in Rust.\n\n**What You're Building:** A production-ready blockchain capable of handling 10,000+ transactions per second. Key components include a high-throughput transaction pool, an immutable blockchain with proof-of-work consensus, real-time balance management, concurrent processing for validation and block creation, and robust security features like cryptographic signatures and double-spending prevention.\n\n**Why This Matters:** This challenge reflects real work you'd do on our team, focusing on performance, concurrency, and security in a distributed system context. We want to see how you approach problems similar to what you'd face day-to-day.\n\n**Time Expectation:** This should take 2-4 hours for an experienced developer. Quality over speed — we'd rather see thoughtful code than rushed features.",
+        "format": "markdown"
       }
     },
     {
